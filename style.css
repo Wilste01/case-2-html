@@ -1,3 +1,47 @@
+body {
+    font-family: "sen";
+    background-image: url(https://images.pexels.com/photos/635279/pexels-photo-635279.jpeg);
+    background-size: cover;
+}
+nav {
+    height: 5rem;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.nav-button {
+  position: relative;
+  display: inline-block;
+  padding: 1.5rem 3rem;
+  color: white;
+  cursor: pointer;
+  text-decoration: none;
+  font-family: "sen";
+}
+
+.nav-button:hover {
+  transition: ease 0.4s;
+  color: #efaa34;
+  text-decoration: dotted green;
+}
+.nav-button:hover::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -1px;
+  height: 2px;
+  background-color: white;
+}
+#nav-active {
+  color: #efaa34;
+}
+
+
+
+
+
 
 
 .flag-container {
@@ -11,9 +55,6 @@
 
 .norway-flag {
   background-color: #BA0C2F;
-  display: grid;
-  height: 200px;
-  width: 300px;
 
 }
 
