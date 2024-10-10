@@ -1,23 +1,67 @@
 
 
+.flag-container {
+
+}
 
 
 
+/* -------- Norway flag ------- */
 
 
+.norway-flag {
+  background-color: #BA0C2F;
+  display: grid;
+  height: 200px;
+  width: 300px;
 
+}
 
-
-
-
-.flag {
-    width: 400px;
-    height: 200px;
+.blue-box {
+  background-color: #00205B;
+}
+.white-box {
+  background-color: #FFFFFF;
 }
 
 
 
 
+
+
+
+
+/*------ France flag -------*/
+
+.france-flag {
+  display: grid;
+  grid-template-areas: 
+  "blue white red"
+  "blue white red"
+  "blue white red";
+  height: 200px;
+  width: 300px;
+  background-color: whitesmoke;
+}
+.blue-stripe {
+  grid-area: blue;
+  background-color: #002654;
+}
+.white-stripe {
+  grid-area: white;
+  background-color: #FFFFFF;
+}
+.red-stripe {
+  grid-area: red;
+  background-color: #ED2939;
+}
+
+
+
+
+
+
+/* ------------- Pixel art + animation --------- */
 
 .pixelart {
     position: absolute;
