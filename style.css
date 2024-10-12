@@ -235,6 +235,7 @@ p {
 
 #h2-position {
   padding-left: 3rem;
+  padding-bottom: 20rem;
 }
 .image-container {
   width: 50rem;
@@ -248,12 +249,20 @@ p {
 .image-container img {
   width: 100%;
   height: auto;
-  /* object-fit: cover; */
+  box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.2), 10px 20px 20px 0 rgba(0, 0, 0, 0.19);
+  transition: ease 0.9s;
 }
+.image-container img:hover {
+  width: 110%;
+  height: auto;
+  transition: ease 0.9s;
+  box-shadow: 0 20px 30px 0 rgba(0, 0, 0, 0.2), 20px 30px 40px 0 rgba(0, 0, 0, 0.19);
+}
+
 .image-container p {
-  margin-top: 1rem; 
+  margin-top: 2.5rem; 
   text-align: center; 
-  font-size: 2.2rem;
+  font-size: 2rem;
 }
 
 figure, .figure-center {
