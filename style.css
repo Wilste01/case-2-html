@@ -1,7 +1,5 @@
 body {
     font-family: "sen";
-    background-image: url(https://images.pexels.com/photos/635279/pexels-photo-635279.jpeg);
-    background-size: cover;
     margin: 0;
     padding: 0;
 }
@@ -57,6 +55,75 @@ nav {
   z-index: -1; 
   object-fit: cover;
 }
+.content-container-index-background-video {
+  z-index: 10;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.content-container-index-background-video h1 {
+  color: white;
+  font-family: "Playfair Display", serif;
+  font-style: italic;
+  letter-spacing: 4px;
+}
+
+
+
+.animated-mouse-container {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 10%; /* Gör området större */
+  height: 20%; /* Gör området större */
+  transform: translate(-50%, 40%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.animated-mouse {
+  position: absolute;
+  width: 27px;
+  height: 47px;
+  border: 2px solid #fff;
+  border-radius: 14px;
+}
+
+
+.animated-mouse-pointer {
+  position: absolute;
+  width: 6px;
+  height: 6px;
+  border-radius: 100%;
+  background: #fff;
+  left: 50%;
+  top: 70%;
+  transform: translate(-50%, -50%);
+}
+
+
+.animated-mouse-container:hover .animated-mouse-pointer {
+  animation-name: mousePointer;
+  animation-duration: 2s;
+  animation-iteration-count: 10;
+  animation-direction: normal;
+  animation-timing-function: linear;
+  animation-fill-mode: backwards;
+}
+
+
+@keyframes mousePointer {
+  0%      { opacity: 0; top: 70%; }
+  20%      { opacity: 1; top: 70%; }
+  40%      { opacity: 1; top: 70%; }
+  60%     { opacity: 1; top: 20%; }
+  61%     { opacity: 1; top: 20%; }
+  67%     { opacity: 0; top: 20%; }
+  100%     { opacity: 0; top: 20%; }
+}
+
 /* ------------------------ */
 
 
