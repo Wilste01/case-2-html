@@ -1,11 +1,11 @@
 body {
-    font-family: "sen";
     margin: 0;
     padding: 0;
 }
 /* ----- Navigation ------ */
 nav {
- position: relative;
+    font-family: "sen";
+    position: relative;
     height: 5rem;
     display: flex;
     justify-content: flex-end;
@@ -125,6 +125,132 @@ nav {
 }
 
 /* ------------------------ */
+
+section {
+  margin: 15rem 5rem 0 5rem;
+}
+
+h2 {
+  margin: 0;
+  padding: 3rem;
+  font-family: "Cormorant Garamond";
+  font-weight: 300;
+  font-size: 5rem;
+  font-style: italic;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+
+}
+
+.text-center {
+  margin: 0 15rem;
+}
+p {
+  font-family: "Cormorant Garamond";
+  letter-spacing: 1.1px;
+  word-spacing: 3px;
+  line-height: 32px;
+  text-align: justify;
+  font-size: 1.1rem;
+}
+
+
+.ul-container {
+
+  background-color: #89b1b1;
+  border-radius: 2px;
+  width: 100%;
+  height: 100%;
+}
+.ul-container ul {
+  margin: 0 3rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 5rem;
+  padding-bottom: 5rem;
+}
+
+.ul-container li {
+  gap: 1rem;
+  list-style: none;
+  font-weight: 300;
+  font-family: "Roboto";
+  letter-spacing: 1.1px;
+  word-spacing: 3px;
+  line-height: 32px;
+  font-size: 1.8rem;
+  padding: 1rem 0;
+}
+.ul-container li:nth-child(1)::after {
+  padding-top: 1rem;
+  display: flex;
+  font-weight: 100;
+  content: "Mest lyssna på indie";
+}
+
+.ul-container li:nth-child(2)::after {
+  padding-top: 1rem;
+  display: flex;
+  font-weight: 100;
+  content: "Laga med vänner och umgås";
+}
+
+.ul-container li:nth-child(3)::after {
+  padding-top: 1rem;
+  display: flex;
+  font-weight: 100;
+  content: "Jag har rekord bland mina vänner med mest fångad gös";
+}.ul-container li:nth-child(4)::after {
+  padding-top: 1rem;
+  display: flex;
+  font-weight: 100;
+  content: "kantareller is da shit";
+}.ul-container li:nth-child(5)::after {
+  padding-top: 1rem;
+  display: flex;
+  font-weight: 100;
+  content: "Älskar äventyr och roadtrips";
+}
+.ul-container li:nth-child(6)::after {
+  padding-top: 1rem;
+  display: flex;
+  font-weight: 100;
+  content: "SoT och allt där man kan bygga";
+}
+.ul-container li:nth-child(7)::after {
+  padding-top: 1rem;
+  display: flex;
+  font-weight: 100;
+  content: "Lite lat bara med gillar det";
+}
+.ul-container li:nth-child(8)::after {
+  padding-top: 1rem;
+  display: flex;
+  font-weight: 100;
+  content: "Är fattig så gör gärna egna dupes";
+}
+
+#h2-position {
+  padding-left: 3rem;
+}
+
+figure, .figure-center {
+
+}
+
+
+.figure-center {
+
+}
+.figure-center img {
+
+  }
+
+
+
 
 
 
