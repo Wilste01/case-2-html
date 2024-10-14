@@ -81,6 +81,7 @@ footer {
 .footer-contact-info p {
   font-family: "sen";
   font-size: 1.2rem;
+  color: rgba(255, 255, 255, 0.2);
 }
 .footer-links-container {
   display: grid;
@@ -90,7 +91,8 @@ footer {
 
 .footer-links {
   padding: 1rem;
-  color: #000000;
+  /* color: #000000; */
+  color: rgba(255, 255, 255, 0.2);
   cursor: pointer;
   text-decoration: none;
   font-family: "sen";
@@ -118,7 +120,6 @@ footer {
   gap: 5rem;
 }
 .icon-social-media {
-  padding-top: 5rem;
   height: 100%;
   width: 100%;
   fill-rule:evenodd;
@@ -133,7 +134,7 @@ footer {
   position: absolute;
   left: -300px;
   right: -300px;
-  top: 0;
+  top: -50px;
   height: 2px;
   background-color: #FFFFFF;
 }
