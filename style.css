@@ -5,9 +5,16 @@ body {
 * {
   box-sizing: border-box;
   text-decoration: none;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-optical-sizing: auto;
 }
 * a {
   color: #000;
+}
+
+:root {
+
 }
 
 
@@ -663,6 +670,105 @@ figcaption {
   font-family: "sen";
   margin-top: 2rem; 
 }
+
+
+
+
+/*  */
+
+
+
+.audio-container {
+  position: relative;
+  width: 20rem;
+  height: 25rem;
+  margin-right: 20px;
+  margin-bottom: 5rem;
+  background-color: #f2f3f5;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px 0 rgba(255, 255, 255, 0.2), 10px 20px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.artist-thumbnail {
+  position: relative;
+  width: 100%;
+  height: 50%;
+  overflow: hidden; 
+  
+
+}
+.artist-image {
+  width: 70%;
+  border-radius: 50%;
+  z-index: 1;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); 
+  transition: ease 0.8s;
+}
+.artist-image:hover {
+  transform: translate(-50%, -50%) scale(1.1);
+  transition: ease 0.8s;
+  border-radius: 50%;
+  z-index: 3;
+}
+
+@keyframes pulse {
+  0% {
+    transition: ease 0.4s;
+    filter: blur(20px);
+  }
+  50% {
+    transform: translate(10, -10%);
+    filter: blur(40px);
+  }
+  100% {
+    transition: ease 0.4s;
+    filter: blur(20px);
+  }
+}
+.artist-image:hover ~ .artist-blur {
+  transition: ease 0.8s;
+  animation: pulse 4s infinite;
+}
+.artist-blur {
+  width: auto;
+  height: 20rem;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  filter: blur(20px);
+  transform: translate(-50%, -10%);
+  transition: ease 0.2s;
+}
+
+
+.artist-label {
+  display: flex;
+  width: 100%;
+  height: 50%;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 0 10px;
+  color: #000000;
+}
+.audio-controls {
+  padding-bottom: 10px;
+}
+.artist-label a, p {
+  padding-top: 2rem;
+  text-align: center;
+  font-family: "Cormorant Garamond";
+}
+
+
+
+
+
+
+
+
 
 /* ------------- Flags -------------------------------- */
 
