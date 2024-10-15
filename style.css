@@ -629,8 +629,12 @@ figure img {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
 }
+.video-container, h2 {
+  padding-top: 0;
+  grid-column: span 2;
+}
 
-/* Kolla över detta.. */
+
 @media (max-width: 1200px) {
   .video-container {
     display: flex; 
