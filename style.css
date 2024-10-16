@@ -572,6 +572,26 @@ figure img {
   animation: linear fadeContent both;
   animation-timeline: --li-in-and-out-of-view;
 }
+.scrollsnap-carousel .slide:nth-child(1)::after{
+  content: "Death Valley";
+  color: #FFFFFF;
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translate(-50%);
+  opacity: 0;
+  transition: opacity 0.5s ease;
+  animation: rotateSlide;
+}
+.scrollsnap-carousel .slide:nth-child(2)::after{
+  content: "Vardagsrum";
+  color: #FFFFFF;
+  position: absolute;
+  bottom: -70px;
+  left: 50%;
+  transform: translate(-50%);
+  opacity: 0;
+}
 .scrollsnap-carousel .slide .content .content-wrapper img {
   width: 100%;
   height: 100%;
@@ -585,8 +605,8 @@ figure img {
     transform: translate(50%) scale(0.65);
   }
   50% {
-      transform: rotateY(0deg) scale(1.25);
-      background: #ffffff00; 
+      transform: scale(1.25);
+      opacity: 1;
   }
   100% {
     transform: translateX(-100%) translate(50%) scale(0.65);
