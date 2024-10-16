@@ -67,7 +67,8 @@ nav {
 /* ---- Footer -------- */
 
 footer {
-  background-color: #404e4e;
+  /* background-color: #404e4e; */
+  background-color: #2d2d2d;
   height: 100%;
 }
 
@@ -98,7 +99,7 @@ footer {
 .footer-contact-info p {
   font-family: "sen";
   font-size: 1.2rem;
-  color: rgba(255, 255, 255, 0.2);
+  color: #969696;
 }
 .footer-links-container {
   display: grid;
@@ -109,7 +110,7 @@ footer {
 .footer-links {
   padding: 1rem;
   /* color: #000000; */
-  color: rgba(255, 255, 255, 0.2);
+  color: #969696;
   cursor: pointer;
   text-decoration: none;
   font-family: "sen";
@@ -678,7 +679,7 @@ figcaption {
 
 
 
-.audio-container {
+.audio-card {
   position: relative;
   width: 20rem;
   height: 25rem;
@@ -714,24 +715,6 @@ figcaption {
   z-index: 3;
 }
 
-@keyframes pulse {
-  0% {
-    transition: ease 0.4s;
-    filter: blur(20px);
-  }
-  50% {
-    transform: translate(10, -10%);
-    filter: blur(40px);
-  }
-  100% {
-    transition: ease 0.4s;
-    filter: blur(20px);
-  }
-}
-.artist-image:hover ~ .artist-blur {
-  transition: ease 0.8s;
-  animation: pulse 4s infinite;
-}
 .artist-blur {
   width: auto;
   height: 20rem;
@@ -756,13 +739,21 @@ figcaption {
 .audio-controls {
   padding-bottom: 10px;
 }
-.artist-label a, p {
-  padding-top: 2rem;
+.artist-label a p {
+  padding-top: 1.5rem;
   text-align: center;
   font-family: "Cormorant Garamond";
+  margin: 0 auto;
 }
 
-
+#audio-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#audio-section h2 {
+  margin-right: 25rem;
+}
 
 
 
