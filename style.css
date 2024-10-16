@@ -14,7 +14,12 @@ body {
 }
 
 :root {
-
+  #626a62
+  #efaa34
+  #2d2d2d
+  /* #676767 */
+  #ABABAB
+  box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.2), 10px 20px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 
@@ -32,7 +37,7 @@ nav {
 }
 
 #nav-container {
-  background-color: #859f9f;
+  background-color: #626a62;
 }
 
 .nav-button {
@@ -426,102 +431,52 @@ figure img {
 
 /* -------------- Gallery ------------------------------ */
 
-
-/* .scrollsnap-carousel {
-  margin-top: 5rem;
-  overflow-x: scroll;
-  overflow-y: hidden;
-  width: 100%;
-  height: 100%;
-  max-width: 100%;
-  scroll-snap-type: x mandatory;
-  white-space: nowrap;
-  padding: 100px 0 100px 0;
-  position: relative;
-  background-color: #FFFFFF;
+#gallery-h1{
+  font-family: "Playfair Display";
+  margin: 10rem auto;
+  text-align: center;
 }
 
-.scrollsnap-carousel .slide {
-  display: inline-block;
-  height: 350px;
-  width: 350px; 
-  scroll-snap-align: center;
-  view-timeline-name: --li-in-and-out-of-view;
-  view-timeline-axis: inline;
-  animation: linear move-to-top both;
-  animation-timeline: --li-in-and-out-of-view;
-  perspective: 40em;
-  position: relative;
+
+.gallery-links-container {
+  background-color: #ABABAB;
+  border-radius: 20px;
+  width: 15%;
+  margin: 10rem auto 20rem auto;
+  padding: 2rem 0;
+  box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.2), 10px 20px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.gallery-links-container h2 {
+  font-size: 3rem;
+  font-style: normal;
+  font-family: "sen";
+  text-align: center;
+
 }
 
-.scrollsnap-carousel .slide:first-of-type {
-  margin-left: 50%;
-  position: relative;
-  background-color: #FFFFFF;
-}
-
-.scrollsnap-carousel .slide:last-of-type {
-  margin-right: 50%;
-  position: relative;
-  background-color: #FFFFFF;
-}
-
-.scrollsnap-carousel .slide .content {
-  width: 100%;
-  padding-bottom: 100%;
-  background: #ffffff;
-  animation: linear rotateSlide both;
-  animation-timeline: --li-in-and-out-of-view;
-  position: relative;
-}
-
-.scrollsnap-carousel .slide .content .content-wrapper {
-  position: absolute;
-  width: 100%;
-  height: 100%;
+.gallery-links {
   display: flex;
+  flex-direction: column;
   align-items: center;
+  font-family: "sen";
+  transition: ease 0.2s;
+}
+
+.gallery-links a:hover {
+  color: #efaa34;
+  transition: ease 0.1s;
+}
+
+
+#images {
+  display: flex;
   justify-content: center;
-  animation: linear fadeContent both;
-  animation-timeline: --li-in-and-out-of-view;
+  padding-top: 15rem;
 }
-.scrollsnap-carousel .slide .content .content-wrapper img {
-  width: 100%;
-  height: 100%;
-  object-fit: contain;
-  overflow: hidden;
-  position: relative;
-}
-
-
-@keyframes rotateSlide {
-  0% {
-    transform: translate(50%) scale(0.1);
-  }
-  50% {
-      transform: rotateY(0deg) scale(1.5);
-      background: #ffffff00; 
-  }
-  100% {
-    transform: translate(50%) scale(0.1);
-  }
-}
-
-@keyframes move-to-top {
-  0% {
-      z-index: -1;
-  }
-  50% {
-      z-index: 100;
-  }
-  100% {
-      z-index: -1;
-  }
-} */
 
 
 .scrollsnap-carousel {
-  margin-top: 5rem;
+  margin: 5rem 0 30rem 0;
   overflow-x: scroll;
   overflow-y: hidden;
   width: 100%;
@@ -542,7 +497,6 @@ figure img {
   view-timeline-axis: inline;
   animation: linear move-to-top both;
   animation-timeline: --li-in-and-out-of-view;
-  /* perspective: 40em; */
   position: relative;
 }
 
@@ -728,13 +682,14 @@ figure img {
 /*  */
 
 .video-container {
-  margin: 0 auto;
-  background-color: #89b1b1;
+  padding: 5rem;
+  margin: 0 auto 30rem auto;
+  background-color: #ABABAB;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
 }
 .video-container, h2 {
-  padding-top: 0;
+  padding-top: 2rem;
   grid-column: span 2;
 }
 
@@ -751,14 +706,11 @@ figure img {
   }
 }
   
-.video-container {
-  padding: 5rem;
-}
 .video-container, video {
   box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.2), 10px 20px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-.video-container, figure {
+.video-container figure {
   gap: 2rem;
   margin: 0 auto;
 }
@@ -776,10 +728,10 @@ figcaption {
 
 
 .audio-card {
+  margin-left: 2.2rem;
   position: relative;
   width: 20rem;
   height: 25rem;
-  margin-right: 20px;
   margin-bottom: 5rem;
   background-color: #f2f3f5;
   border-radius: 10px;
@@ -846,6 +798,7 @@ figcaption {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding-bottom: 20rem;
 }
 #audio-section h2 {
   margin-right: 25rem;
