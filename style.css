@@ -430,6 +430,37 @@ figure img {
 
   }
 
+/* ---------------- Place ------------------------------- */
+
+.background-image {
+  background-image: url(images/ulricehamn.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100vw;
+  height: 92vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#place-h1 {
+  margin: 0;
+  padding-bottom: 20rem;
+  color: white;
+  font-family: "Playfair Display", serif;
+  font-style: italic;
+  font-size: 5rem;
+  letter-spacing: 4px;
+}
+
+
+
+
+
+
+
 /* -------------- Gallery ------------------------------ */
 
 #gallery-h1{
