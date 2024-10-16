@@ -574,9 +574,10 @@ figure img {
 }
 .scrollsnap-carousel .slide:nth-child(1)::after{
   content: "Death Valley";
+  font-family: "sen";
   color: #FFFFFF;
   position: absolute;
-  bottom: -10px;
+  bottom: -23%;
   left: 50%;
   transform: translate(-50%);
   opacity: 0;
@@ -587,8 +588,9 @@ figure img {
 .scrollsnap-carousel .slide:nth-child(2)::after{
   content: "Vardagsrum";
   color: #FFFFFF;
+  font-family: "sen";
   position: absolute;
-  bottom: -70px;
+  bottom: -23%;
   left: 50%;
   transform: translate(-50%);
   opacity: 0;
@@ -599,8 +601,9 @@ figure img {
 .scrollsnap-carousel .slide:nth-child(3)::after{
   content: "Jorden";
   color: #FFFFFF;
+  font-family: "sen";
   position: absolute;
-  bottom: -30px;
+  bottom: -23%;
   left: 50%;
   transform: translate(-50%);
   opacity: 0;
@@ -611,8 +614,9 @@ figure img {
 .scrollsnap-carousel .slide:nth-child(4)::after{
   content: "Spaced out";
   color: #FFFFFF;
+  font-family: "sen";
   position: absolute;
-  bottom: -70px;
+  bottom: -23%;
   left: 50%;
   transform: translate(-50%);
   opacity: 0;
@@ -623,8 +627,9 @@ figure img {
 .scrollsnap-carousel .slide:nth-child(5)::after{
   content: "Placeholder";
   color: #FFFFFF;
+  font-family: "sen";
   position: absolute;
-  bottom: -10px;
+  bottom: -23%;
   left: 50%;
   transform: translate(-50%);
   opacity: 0;
@@ -635,8 +640,9 @@ figure img {
 .scrollsnap-carousel .slide:nth-child(6)::after{
   content: "Placeholder";
   color: #FFFFFF;
+  font-family: "sen";
   position: absolute;
-  bottom: -10px;
+  bottom: -23%;
   left: 50%;
   transform: translate(-50%);
   opacity: 0;
@@ -647,8 +653,9 @@ figure img {
 .scrollsnap-carousel .slide:nth-child(7)::after{
   content: "Placeholder";
   color: #FFFFFF;
+  font-family: "sen";
   position: absolute;
-  bottom: -10px;
+  bottom: -23%;
   left: 50%;
   transform: translate(-50%);
   opacity: 0;
