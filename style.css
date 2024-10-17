@@ -642,14 +642,28 @@ td.text-center {
 
 /* ---------------------- Place ------------------------- */
 
+
+.event-main {
+  width: 100%;
+  background-color: #000;
+
+}
+.event-main img {
+  width: 100%;
+  height: 92vh;
+  object-fit: cover;
+}
+
 .event-backdrop {
   background-image: url(images/Teddybears-214.jpg);
 
   background-repeat: no-repeat;
   width: 100%;
   background-attachment: fixed;
-  height: 100vh;
+  /* height: 100vh; */
+  min-height: 100vh;
   background-size: cover;
+  padding-bottom: 5rem;
 }
 .event-wrapper {
   backdrop-filter: blur(5px);
@@ -670,12 +684,53 @@ td.text-center {
   text-align: justify;
 }
 
+.event-text-center-wrapper {
+  backdrop-filter: blur(5px);
+  background-color: rgba(255, 255, 255, 0.1); 
+  border-radius: 10px;
+  color: #FFFFFF;
+  width: 50%;
+  margin: 50vh auto;
+  padding: 3rem;
+}
+.text-center {
+  text-align: center;
+}
 
+.line-up-container {
+  backdrop-filter: blur(5px);
+  background-color: rgba(255, 255, 255, 0.1); 
+  border-radius: 5px;
+  color: #FFFFFF;
+}
+.line-up-container p {
+  text-align: center;
+}
 
+.line-up {
+  font-family: "sen";
+  font-size: 2rem;
+  text-align: center;
+  list-style: none;
+}
 
-
-
-
+.ticket-button {
+  margin: 0 auto;
+  display: block;
+  text-align: center;
+  width: 20rem;
+  background-color:   #2d2d2d;
+  border-radius: 30px;
+  padding: 1rem;
+  font-size: 3rem;
+  color: #FFFFFF;
+  transition: ease 0.2s;
+}
+.ticket-button:hover {
+  transform: scale(1.1);
+  color: #efaa34;
+  transition: ease 0.2s;
+}
 
 
 
