@@ -296,13 +296,28 @@ p {
   font-size: 1.1rem;
 }
 
+.section-background {
+  background-image: url(https://imagevault.sca.com/publishedmedia/keya773yxss4t0l3yuna/Dimma_-ver_skog_0972.jpg);
+  background-size: cover; 
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed; 
+  width: 100%;
+  height: 150vh;
+  display: flex; 
+  justify-content: center; 
+  align-items: center; 
+}
+.section-background section {
+  margin: 3rem 10rem;
+}
 
 .ul-container {
 
-  background-color: #89b1b1;
-  border-radius: 2px;
-  width: 100%;
-  height: 100%;
+  backdrop-filter: blur(10px);
+  background-color: rgba(255, 255, 255, 0.4); 
+  border-radius: 10px;
+  color: #FFFFFF;
   box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.2), 10px 20px 20px 0 rgba(0, 0, 0, 0.19);
 }
 .ul-container ul {
@@ -317,7 +332,7 @@ p {
 .ul-container li {
   gap: 1rem;
   list-style: none;
-  font-weight: 300;
+  font-weight: 400;
   font-family: "Roboto";
   letter-spacing: 1.1px;
   word-spacing: 3px;
@@ -338,21 +353,21 @@ p {
 .ul-container li:nth-child(1)::after {
   padding-top: 1rem;
   display: flex;
-  font-weight: 100;
+  font-weight: 300;
   content: "Mest lyssna på indie";
 }
 
 .ul-container li:nth-child(2)::after {
   padding-top: 1rem;
   display: flex;
-  font-weight: 100;
+  font-weight: 300;
   content: "Laga med vänner och umgås";
 }
 
 .ul-container li:nth-child(3)::after {
   padding-top: 1rem;
   display: flex;
-  font-weight: 100;
+  font-weight: 300;
   content: "Jag har rekord bland mina vänner med mest fångad gös";
 }.ul-container li:nth-child(4)::after {
   padding-top: 1rem;
@@ -362,25 +377,25 @@ p {
 }.ul-container li:nth-child(5)::after {
   padding-top: 1rem;
   display: flex;
-  font-weight: 100;
+  font-weight: 300;
   content: "Älskar äventyr och roadtrips";
 }
 .ul-container li:nth-child(6)::after {
   padding-top: 1rem;
   display: flex;
-  font-weight: 100;
+  font-weight: 300;
   content: "SoT och allt där man kan bygga";
 }
 .ul-container li:nth-child(7)::after {
   padding-top: 1rem;
   display: flex;
-  font-weight: 100;
+  font-weight: 300;
   content: "Lite lat bara med gillar det";
 }
 .ul-container li:nth-child(8)::after {
   padding-top: 1rem;
   display: flex;
-  font-weight: 100;
+  font-weight: 300;
   content: "Är fattig så gör gärna egna dupes";
 }
 
