@@ -719,18 +719,131 @@ td.text-center {
   display: block;
   text-align: center;
   width: 20rem;
-  background-color:   #2d2d2d;
+  background-image: linear-gradient(to right, #FF8008 0%, #FFC837  51%, #FF8008  100%);
+  background-size: 200% auto; /* Öka storleken på bakgrunden för att möjliggöra animation */
   border-radius: 30px;
   padding: 1rem;
   font-size: 3rem;
   color: #FFFFFF;
   transition: ease 0.2s;
+  text-transform: uppercase;
+  transition: 0.5s;
 }
 .ticket-button:hover {
-  transform: scale(1.1);
-  color: #efaa34;
+  transform: scale(1.02);
+  color: #FFFFFF;
   transition: ease 0.2s;
+  background-position: right center; 
 }
+/*  -----  */
+
+.form-background-video-container {
+  position: relative;
+  width: 100%;
+  min-height: 120vh;
+}
+
+.form-background-video {
+  width: 100%;
+  object-fit: cover;
+  height: 100%;
+  object-position: center;
+  transform: scale(1.4);
+  z-index: -1;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap');
+
+.sign-up {
+  backdrop-filter: blur(10px);
+  background-color: rgba(255, 255, 255, 0.1); 
+  position: relative; /* Sätt position till relative */
+  font-family: "Fjalla One";
+  color: #ffffff;
+  font-size: 14pt;
+  width: 50rem;
+  margin: 0 auto;
+  padding: 40px 60px;
+  border: 2px solid rgba(0, 0, 0, 1);
+  box-shadow: 15px 15px 1px rgba(255, 165, 128, 1), 15px 15px 1px 2px rgba(0, 0, 0, 1);
+  transform: translate(0, 10%);
+}
+
+form {
+  display: flex;
+  justify-content: center;
+  margin: 5rem 0;
+}
+form fieldset {
+  /* padding: 3rem; */
+}
+
+
+
+fieldset {
+  border: none;
+
+}
+
+legend {
+  font-size: 2rem;
+  /* margin-bottom: 20px; */
+}
+
+label {
+  display: block;
+  margin: 10px 0 5px;
+}
+
+.input-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+.input-2 {
+  grid-column: span 2;
+}
+
+input, textarea, select {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  /* margin-bottom: 20px; */
+  border: none;
+  border-radius: 15px;
+  border-bottom: 3px solid rgba(0, 0, 0, 1);
+  background: #f8f4e5;
+}
+
+input:focus, textarea:focus, select:focus {
+  border-bottom-color: #fbcc00;
+  outline: none;
+}
+
+input[type="submit"] {
+  margin-top: 3rem;
+  width: 100%;
+  padding: 10px;
+  background: rgba(255, 165, 128, 1);
+  border-radius: 5px;
+  font-size: 1.5rem;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+input[type="submit"]:hover {
+  background: rgba(0, 0, 0, 1);
+  color: white;
+}
+
+
+
 
 
 
