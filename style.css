@@ -779,7 +779,7 @@ td.text-center {
   margin: 0 auto;
   padding: 40px 60px;
   border: 2px solid rgba(0, 0, 0, 1);
-  box-shadow: 15px 15px 1px rgba(255, 165, 128, 1), 15px 15px 1px 2px rgba(0, 0, 0, 1);
+  box-shadow: 15px 15px 1px rgb(251, 204, 0), 15px 15px 1px 2px rgba(0, 0, 0, 1);
   transform: scale(0.9) translate(0, 10%);
 }
 
@@ -840,7 +840,7 @@ input[type="submit"] {
   margin-top: 3rem;
   width: 100%;
   padding: 10px;
-  background: rgba(255, 165, 128, 1);
+  background: #fbcc00;
   border-radius: 5px;
   font-size: 1.5rem;
   cursor: pointer;
