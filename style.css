@@ -19,7 +19,7 @@ body {
   color: #FFFFFF;
   font-family: "sen";
   font-size: 2rem;
-  margin-bottom: 1rem;
+  margin-bottom: 0;
 }
 
 .hamburger {
@@ -34,11 +34,12 @@ body {
 
 .mobile-nav a {
   text-align: center;
+  padding-top: 2rem;
   display: none;
   color: #FFFFFF;
   text-decoration: none;
-  padding: 1rem;
   background-color: #626a62;
+  padding-bottom: 2rem;
 }
 
 
@@ -58,30 +59,145 @@ nav {
 }
 
 
+.index-background-video {
+  width: 100%;
+}
+h1, h2 {
+  text-align: center;
+  font-family: "Playfair Display", serif;
+}
+
+p {
+  padding: 1rem 3rem;
+  text-align: justify;
+  font-family: "Cormorant Garamond";
+}
+
+.section-background {
+  background-image: url(https://imagevault.sca.com/publishedmedia/keya773yxss4t0l3yuna/Dimma_-ver_skog_0972.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  /* width: 100%; */
+  padding: 2rem 0;
+}
+
+.ul-container {
+  font-family: "Cormorant Garamond";
+  color: #FFFFFF;
+  backdrop-filter: blur(5px);
+  background-color: rgba(255, 255, 255, 0.1); 
+  padding-bottom: 1rem;
+}
+
+.image-container {
+  width: 100%;
+  height: 50vh; /* Sätter höjd till 100% av viewport höjd */
+  display: flex;
+  flex-direction: column; /* Om du vill att bilderna ska placeras vertikalt */
+  justify-content: center; /* Centrera vertikalt */
+  align-items: center; /* Centrera horisontellt */
+}
+
+.image-container img {
+  width: 80%;
+  object-fit: contain;
+  box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.2), 10px 20px 20px 0 rgba(0, 0, 0, 0.19);
+}
 
 
 
+footer {
+  width: 100%;
+  height: 180vh;
+  background-color: #2d2d2d;
+}
+
+.footer-top {
+  /* display: flex; */
+}
+
+.footer-logo-container {
+padding-top: 5px;
+padding-left: 5px;
+}
+.footer-logo-container img {
+  width: 5rem;
+  height: auto;
+}
 
 
+.footer-contact-container {
+  display: flex;
+  flex-direction: column;
+}
 
+.footer-contact-info p {
+  font-family: "sen";
+  font-size: 1.2rem;
+  color: #969696;
+}
 
+.footer-links-container {
+  display: flex;
+  flex-direction: column;
+  padding-left: 2rem;
+  padding-bottom: 3rem;
+  position: relative;
+}
 
+.footer-links {
+  padding: 1rem;
+  color: #969696;
+  text-decoration: none;
+  font-family: "sen";
+  font-size: 1.5rem;
 
+}
 
+.footer-links-container::before {
+  content: '';
+  position: absolute;
+  left: -3px;
+  right: -3px;
+  top: -20px;
+  height: 2px;
+  background-color: #969696;
+}
+.icon-container {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  width: 60%;
+  margin: 0 auto;
+  gap: 5rem;
+}
+.icon-social-media {
+  height: 100%;
+  width: 100%;
+  fill-rule:evenodd;
+  clip-rule:evenodd;
+  stroke-linejoin:round;
+  stroke-miterlimit:2;
+  fill: white;
+}
 
+.icon-container::before {
+  content: '';
+  position: absolute;
+  left: -3px;
+  right: -3px;
+  top: -20px;
+  height: 2px;
+  background-color: #FFFFFF;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
+.copy {
+  padding-top: 3rem;
+  text-align: center;
+  color: rgb(255, 255, 255);
+  color: rgba(255, 255, 255, 0.2);
+  font-family: "sen";
+}
 
 /* ------------- Desktop -------------------- */
 
