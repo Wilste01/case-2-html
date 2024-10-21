@@ -198,6 +198,100 @@ padding-left: 5px;
   color: rgba(255, 255, 255, 0.2);
   font-family: "sen";
 }
+/* ------- */
+
+.background-image {
+  margin-top: 0;
+  padding-top: 2rem;
+  background-image: url(images/ulricehamn.jpg);
+  background-size: cover;
+  width: 100%;
+  height: 20vh;
+  color: #FFFFFF;
+  font-family: "sen";
+}
+
+.population {
+  text-align: center;
+  display: flex;
+  justify-content: space-evenly;
+  padding: 1rem;
+  font-size: 2rem;
+}
+
+.table-fill {
+  background: white;
+  border-collapse: collapse;
+  height: 320px;
+  margin: auto;
+  padding:5px;
+  width: 100%;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+ }
+ .th-head {
+   background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTuWQl3fVd6x0VDEUbiMbQm79i45OAi4ZoTMQ&s);
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-position: bottom;
+ }
+ th {
+  color:#D5DDE5;;
+  font-size: 2rem;
+  font-weight: 100;
+  padding: 2rem;
+  text-align:center;
+ }
+ tr {
+  border-top: 1px solid #C1C3D1;
+  color:#666B85;
+  font-size:16px;
+  font-weight:normal;
+  text-shadow: 0 1px 1px rgba(256, 256, 256, 0.1);
+ }
+ tr:nth-child(odd) td {
+  background:#EBEBEB;
+ }
+ td {
+  background:#FFFFFF;
+  padding:20px;
+  text-align:left;
+  font-weight:300;
+  font-size:18px;
+  border: 1px solid #C1C3D1;
+ }
+ th.text-center {
+  text-align: center;
+ }
+ td.text-center {
+  text-align: center;
+ }
+
+.image-grid {
+  width: 100%;
+  object-fit: contain;
+  display: flex;
+  flex-direction: column;
+}
+.grid-image-container {
+  margin: 0;
+  padding: 0;
+  background-color: #000;
+}
+.grid-image-container img {
+  width: 100%;
+  height: auto;
+  margin: 0;
+  padding: 0;
+}
+
+.map-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 1rem;
+}
+
+
 
 /* ------------- Desktop -------------------- */
 
