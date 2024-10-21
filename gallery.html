@@ -4,16 +4,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preload" href="images/embeded-milky-wide.png" as="image" type="image/jpg">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Sen:wght@400..800&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Press+Start+2P&display=swap" rel="stylesheet">
     <title>Galleri</title>
     <link rel="icon" type="image/svg+xml" href="/images/favicon.svg">
-    <link rel="stylesheet" href="style.css">
+    <link rel="preload" href="images/mounish-raja-M_s_K5sWmxI-unsplash (kopia).jpg" as="image" type="image/jpg">
+
+   
 </head>
 
 
@@ -30,40 +36,38 @@
 
 
 
-
         <div class="gallery-frontpage-wrapper">
-            <div class="gallery-frontpage-image-wrapper">
-                <img src="images/embeded-milky.jpg" alt="">
-            </div>
             <div class="gallery-frontpage-content-container">
-                <!-- <h1 id="gallery-h1">En sida med olika inbäddade media filer</h1> -->
+                <h1 id="gallery-h1">En sida med olika inbäddade media filer</h1>
             </div>
+            <div class="gallery-links-container">
+                <h2>Innehåll</h2>
+                <div class="gallery-links">
+                    <h3><a href="#video">Video</a></h3>
+                    <h3><a href="#audio">Ljud</a></h3>
+                    <h3><a href="#images">Bilder</a></h3>
+                </div>
+            </div>
+
+
         </div>
 
 
 
 
-        
-        <div class="gallery-links-container">
-            <h2>Innehåll</h2>
-            <div class="gallery-links">
-                <h3><a href="#video">Video</a></h3>
-                <h3><a href="#audio">Ljud</a></h3>
-                <h3><a href="#images">Bilder</a></h3>
-            </div>
-        </div>
 
-
+    
 
 
 
         <!-- -------------------------------------------- -->
-         <h2 id="images">Bilder</h2>
+        <h2 id="images">Bilder</h2>
         <div class="scrollsnap-carousel">
             <div class="slide">
                 <div class="content">
                     <div class="content-wrapper">
-                        <img src="images/Mesquite_Sand_Dunes_in_Death_Valley.jpg" alt="En bild på sandybor i Death Valley">
+                        <img src="images/Mesquite_Sand_Dunes_in_Death_Valley.jpg"
+                            alt="En bild på sandybor i Death Valley">
                     </div>
                 </div>
             </div>
@@ -85,7 +89,8 @@
             <div class="slide">
                 <div class="content">
                     <div class="content-wrapper">
-                        <img src="images/img_spaced_out.jpeg" alt="Person sittandes på en väg med stjärnor och planeter i himlen">
+                        <img src="images/img_spaced_out.jpeg"
+                            alt="Person sittandes på en väg med stjärnor och planeter i himlen">
                     </div>
                 </div>
             </div>
@@ -124,13 +129,45 @@
 
         <!-- ----------------------------------------- -->
 
+        <div class="video-content-wrapper">
+            <section>
+                <div class="video-container">
+                    <h2 id="video">Video filer</h2>
+                    <figure>
+                        <!-- Absoluta sökvägar -->
+                        <video
+                            src="https://upload.wikimedia.org/wikipedia/commons/4/4c/Sunset_on_Halfdome_timelapse_Yosemite_CA_2023-07-15_20-11-06_1.webm"
+                            width="400" controls></video>
+                        <figcaption>
+                            <a href="https://creativecommons.org/licenses/by/4.0" target="_blank">G. Edward Johnson CC
+                                BY
+                                4.0</a>,
+                            via
+                            Wikimedia Commons
+                        </figcaption>
+                    </figure>
+                    <figure>
+                        <video src="https://upload.wikimedia.org/wikipedia/commons/c/c6/Sunset_in_Pantai_Kukup.webm"
+                            width="400" controls></video>
+                        <figcaption>
+                            <a href="https://creativecommons.org/licenses/by/4.0" target="_blank">Joaquim Baeta CC BY
+                                4.0</a>,
+                            via
+                            Wikimedia Commons
+                        </figcaption>
+                    </figure>
+                </div>
+            </section>
+            <div class="video-container-background">
+                <!-- <img id="snö" src="images/mounish-raja-M_s_K5sWmxI-unsplash (kopia).jpg" alt=""> -->
+            </div>
+        </div>
 
-
-        <section>
+        <!-- <section>
             <div class="video-container">
                 <h2 id="video">Video filer</h2>
                 <figure>
-                    <!-- Absoluta sökvägar -->
+                    Absoluta sökvägar
                     <video
                         src="https://upload.wikimedia.org/wikipedia/commons/4/4c/Sunset_on_Halfdome_timelapse_Yosemite_CA_2023-07-15_20-11-06_1.webm"
                         width="400" controls></video>
@@ -152,9 +189,9 @@
                     </figcaption>
                 </figure>
             </div>
-        </section>
-
-        <section id="audio-section">
+        </section> -->
+        <div class="audio-wrapper">
+            <h2 class="padding-left">Ljudfiler</h2>
             <div id="audio" class="audio-container">
                 <div class="audio-card">
                     <div class="artist-thumbnail">
@@ -190,17 +227,24 @@
                             Dog</audio>
                     </div>
                 </div>
-
-                <figure id="audio">
-                    <iframe style="border-radius:12px"
-                        src="https://open.spotify.com/embed/track/7rIhp6EWLNtM8qFIQruJPT?utm_source=generator"
-                        width="400" height="152" frameBorder="0" allowfullscreen=""
-                        allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
-                        loading="lazy"></iframe>
-                </figure>
+                <div class="iframe-conteiner">
+                    <figure id="audio">
+                        <iframe style="border-radius:12px"
+                            src="https://open.spotify.com/embed/track/7rIhp6EWLNtM8qFIQruJPT?utm_source=generator"
+                            width="400" height="152" frameBorder="0" allowfullscreen=""
+                            allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                            loading="lazy"></iframe>
+                    </figure>
+                    <figure>
+                        <iframe style="border-radius:12px"
+                            src="https://open.spotify.com/embed/track/0V5cvmTKsYmF5FmGGEAfmS?utm_source=generator&theme=0"
+                            width="100%" height="152" frameBorder="0" allowfullscreen=""
+                            allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                            loading="lazy"></iframe>
+                    </figure>
+                </div>
             </div>
-            <h2>Ljudfiler</h2>
-        </section>
+        </div>
     </main>
     <footer>
         <div>
