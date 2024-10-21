@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap');
+
 body {
   margin: 0;
   padding: 0;
@@ -244,7 +246,6 @@ footer {
 }
 
 @media (max-width: 1111px) {
-  transition: ease;
 
   .population-container {
     display: grid;
@@ -391,18 +392,17 @@ td.text-center {
     text-decoration: none;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    font-optical-sizing: auto;
   }
 
   * a {
     color: #000;
   }
 
-  :root {
+  /* :root {
     #626a62 #efaa34 #2d2d2d
-    /* #676767 */
+    #676767
     #ABABAB box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.2), 10px 20px 20px 0 rgba(0, 0, 0, 0.19);
-  }
+  } */
 
   .margin-bottom {
     margin-bottom: 15rem;
@@ -1229,7 +1229,7 @@ td.text-center {
   }
 
 
-  @import url('https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap');
+
 
   .sign-up {
     backdrop-filter: blur(10px);
@@ -1423,7 +1423,7 @@ td.text-center {
     padding: 100px 0 100px 0;
     background-color: #000;
   }
-
+/* Det är några parningsfel p.g.a att de är nya och experimentella funktioner som inte stöds av alla webläsare, de stöts av de 3 största som jag anser i detta projektet är tillräckligt */
   .scrollsnap-carousel .slide {
     display: inline-block;
     height: 350px;
