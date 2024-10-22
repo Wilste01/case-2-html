@@ -1642,7 +1642,7 @@ td.text-center {
     height: 100vh;
     position: relative;
     background-attachment: fixed;
-    background-image: url(images/mounish-raja-M_s_K5sWmxI-unsplash\ \(kopia\).jpg);
+    background-image: url(images/mounish-raja-M_s_K5sWmxI-unsplash\.jpg);
     background-size: cover;
     background-position: center;
   }
@@ -1784,6 +1784,12 @@ td.text-center {
     justify-content: space-between;
     padding: 0 10px;
     color: #000000;
+  }
+
+  .artist-label p {
+    letter-spacing: 0;
+    line-height: 16px;
+    font-size: 1rem;
   }
 
   .audio-controls {
